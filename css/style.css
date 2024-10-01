@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'BitPotion';
-    src: url('Assets/Fonts/BitPotion.ttf') format('truetype');
+    src: url('../Assets/Fonts/BitPotion.ttf') format('truetype'); /* Adjusted path */
 }
 
 body {
     font-family: 'BitPotion', Arial, sans-serif;
-    background-image: url('Assets/Images/Background.png');
-    cursor: url('Assets/Images/Cursors/Idle.png'), auto;
+    background-image: url('../Assets/Images/Background.png'); /* Adjusted path */
+    cursor: url('../Assets/Images/Cursors/Idle.png'), auto; /* Adjusted path */
 }
 
 html {
@@ -20,17 +20,17 @@ html {
 }
 
 button, .nav-button, .hero-button, .about-button, input[type="submit"] {
-    cursor: url('Assets/Images/Cursors/Pointer.png'), auto !important;
+    cursor: url('../Assets/Images/Cursors/Pointer.png'), auto !important; /* Adjusted path */
 }
 
 .navbar a img {
-    cursor: url('Assets/Images/Cursors/Pointer.png'), auto !important;
+    cursor: url('../Assets/Images/Cursors/Pointer.png'), auto !important; /* Adjusted path */
 }
 
 .social-icons a {
-    cursor: url('Assets/Images/Cursors/Pointer.png'), auto !important;
+    cursor: url('../Assets/Images/Cursors/Pointer.png'), auto !important; /* Adjusted path */
 }
 
 .feedback-input, textarea {
-    cursor: url('Assets/Images/Cursors/Text.png'), auto;
+    cursor: url('../Assets/Images/Cursors/Text.png'), auto; /* Adjusted path */
 }
