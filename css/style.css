@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'BitPotion';
-    src: url('https://github.com/WaffleAWT/Portfolio/Assets/Fonts/BitPotion.ttf') format('truetype');
+    src: url('/Assets/Fonts/BitPotion.ttf') format('truetype');
 }
 
 body {
