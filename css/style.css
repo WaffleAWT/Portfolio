@@ -24,3 +24,13 @@ button, .nav-button, .hero-button, .about-button, input[type="submit"] {
 .feedback-input, textarea {
     cursor: url('https://raw.githubusercontent.com/WaffleAWT/Portfolio/refs/heads/main/Assets/Images/Cursors/Text.png'), auto;
 }
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
