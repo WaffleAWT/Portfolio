@@ -1,36 +1,26 @@
 @font-face {
     font-family: 'BitPotion';
-    src: url('../Assets/Fonts/BitPotion.ttf') format('truetype'); /* Adjusted path */
+    src: url('https://github.com/WaffleAWT/Portfolio/Assets/Fonts/BitPotion.ttf') format('truetype');
 }
 
 body {
     font-family: 'BitPotion', Arial, sans-serif;
-    background-image: url('../Assets/Images/Background.png'); /* Adjusted path */
-    cursor: url('../Assets/Images/Cursors/Idle.png'), auto; /* Adjusted path */
-}
-
-html {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-}
-
-.section {
-    height: 100vh;
-    scroll-snap-align: start;
+    background-image: url('https://github.com/WaffleAWT/Portfolio/Assets/Images/Background.png');
+    cursor: url('https://github.com/WaffleAWT/Portfolio/Assets/Images/Cursors/Idle.png'), auto;
 }
 
 button, .nav-button, .hero-button, .about-button, input[type="submit"] {
-    cursor: url('../Assets/Images/Cursors/Pointer.png'), auto !important; /* Adjusted path */
+    cursor: url('https://github.com/WaffleAWT/Portfolio/Assets/Images/Cursors/Pointer.png'), auto !important;
 }
 
 .navbar a img {
-    cursor: url('../Assets/Images/Cursors/Pointer.png'), auto !important; /* Adjusted path */
+    cursor: url('https://github.com/WaffleAWT/Portfolio/Assets/Images/Cursors/Pointer.png'), auto !important;
 }
 
 .social-icons a {
-    cursor: url('../Assets/Images/Cursors/Pointer.png'), auto !important; /* Adjusted path */
+    cursor: url('https://github.com/WaffleAWT/Portfolio/Assets/Images/Cursors/Pointer.png'), auto !important;
 }
 
 .feedback-input, textarea {
-    cursor: url('../Assets/Images/Cursors/Text.png'), auto; /* Adjusted path */
+    cursor: url('https://github.com/WaffleAWT/Portfolio/Assets/Images/Cursors/Text.png'), auto;
 }
