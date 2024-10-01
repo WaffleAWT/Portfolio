@@ -1,36 +1,26 @@
 @font-face {
     font-family: 'BitPotion';
-    src: url('/Assets/Fonts/BitPotion.ttf') format('truetype');
+    src: url('../Assets/Fonts/BitPotion.ttf') format('truetype'); /* Go up one directory */
 }
 
 body {
     font-family: 'BitPotion', Arial, sans-serif;
-    background-image: url('/Assets/Images/Background.png');
-    cursor: url('/Assets/Images/Cursors/Idle.png'), auto;
-}
-
-html {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-}
-
-.section {
-    height: 100vh;
-    scroll-snap-align: start;
+    background-image: url('../Assets/Images/Background.png'); /* Go up one directory */
+    cursor: url('../Assets/Images/Cursors/Idle.png'), auto; /* Go up one directory */
 }
 
 button, .nav-button, .hero-button, .about-button, input[type="submit"] {
-    cursor: url('/Assets/Images/Cursors/Pointer.png'), auto !important;
+    cursor: url('../Assets/Images/Cursors/Pointer.png'), auto !important; /* Go up one directory */
 }
 
 .navbar a img {
-    cursor: url('/Assets/Images/Cursors/Pointer.png'), auto !important;
+    cursor: url('../Assets/Images/Cursors/Pointer.png'), auto !important; /* Go up one directory */
 }
 
 .social-icons a {
-    cursor: url('/Assets/Images/Cursors/Pointer.png'), auto !important;
+    cursor: url('../Assets/Images/Cursors/Pointer.png'), auto !important; /* Go up one directory */
 }
 
 .feedback-input, textarea {
-    cursor: url('/Assets/Images/Cursors/Text.png'), auto;
+    cursor: url('../Assets/Images/Cursors/Text.png'), auto; /* Go up one directory */
 }
