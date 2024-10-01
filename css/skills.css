@@ -1,0 +1,43 @@
+.skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 176px;
+    top: 0;
+    bottom: 0;
+    gap: 64px;
+}
+
+.web-design, .game-dev, .modeling, .pixel-art, .music {
+    background-color: #7f6d9b;
+    color: aliceblue;
+    transition: transform 0.3s ease;
+    font-family: 'BitPotion', Arial, sans-serif;
+    font-size: 48px;
+    border: none;
+    border-radius: 5px;
+    width: 35%;
+}
+
+.web-design:hover, .game-dev:hover, .modeling:hover, .pixel-art:hover, .music:hover{
+    background-color: #585a85;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.right-section {
+    flex: 1;
+    margin-left: 128px;
+}
+
+.web-img, .game-img, .modeling-img, .pixel-img, .music-img {
+    animation: animate 1s infinite ease alternate;
+}

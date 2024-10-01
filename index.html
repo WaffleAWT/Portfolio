@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waffle</title>
+
+    <link rel="icon" type="image/png" href="Assets/Images/Favicon.png">
+
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/ticTacToe.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/socialIcons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#home">
+            <img src="Assets/Images/Logo.png" alt="nav-img">
+        </a>
+        <div class="nav-buttons">
+            <button class="nav-button" data-scroll="home">Home</button>
+            <button class="nav-button" data-scroll="about">About me</button>
+            <button class="nav-button" data-scroll="skills">Skills</button>
+            <button class="nav-button" data-scroll="contact">Contact</button>
+        </div>
+    </nav>    
+    
+    <div class="container">
+        <section class="section hero" id="home">
+            <div class="left-section">
+                <h1>Think. Achieve.<br> Conquer.</h1>
+                <p>- What I do?<br> I make you breathe life into digital worlds.</p>
+                <button class="hero-button">Learn more</button>
+            </div>
+            <div class="right-section">
+                <img src="Assets/Images/Hero.png" alt="hero-img" class="hero-img">
+            </div>
+        </section>
+    </div>
+    
+    <section class="section about" id="about">
+        <h1 class="about-title">Howdy! I'm Waffle</h1>
+        <p class="about-desc">I am a creative professional.<br> I have a passion for game development, 3D modeling, pixel art, and web design.<br> I have a strong foundation in these diverse fields.<br> Psst, I'll bring a unique blend of technical expertise and artistic flair to every project I undertake.</p>
+        <button class="about-button">Skills</button>
+    </section>
+
+    <section class="section skills" id="skills">
+        <div class="left-section">
+            <button class="web-design" id="web-design">Web Design</button>
+            <button class="game-dev" id="game-dev">Game Development</button>
+            <button class="modeling" id="modeling">Modeling</button>
+            <button class="pixel-art" id="pixel-art">Pixel Art</button>
+            <button class="music" id="music">Music</button> <!-- New button added -->
+        </div>
+        <div class="right-section">
+            <img src="Assets/Images/Web.png" class="web-img" id="web-img">
+            <img src="Assets/Images/GameDev.png" class="game-img" id="game-img">
+            <img src="Assets/Images/Modeling.png" class="modeling-img" id="modeling-img">
+            <img src="Assets/Images/Pixel.png" class="pixel-img" id="pixel-img">
+            <img src="Assets/Images/Music.png" class="music-img" id="music-img" style="display:none;"> <!-- Music image -->
+        </div>
+    </section>    
+
+    <section class="section contact" id="contact">
+        <div class="form">
+            <div id="thank-you-message" style="display:none; color: #f0f8ff; margin: 10px 0; font-size: 32px; text-align: center;">
+                Thank you! I will get in touch with you soon ^-^
+            </div>
+            <form id="contact-form" action="https://formspree.io/f/mgvwgdvz" method="POST" onsubmit="showThankYouMessage(event)">      
+                <input name="name" type="text" class="feedback-input" placeholder="Name" required />   
+                <input name="email" type="email" class="feedback-input" placeholder="Email" required />
+                <textarea name="text" class="feedback-input" placeholder="Comment" required></textarea>
+                <input type="submit" value="SUBMIT"/>
+            </form>
+        </div>
+    </section>    
+
+    <div class="social-icons">
+        <a href="https://waffleawt.itch.io" target="_blank">
+            <i class="fab fa-itch-io"></i>
+        </a>
+        <a href="https://github.com/WaffleAWT" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+
+    <audio id="hover-sound" src="Assets/Audio/Hover.wav" preload="auto"></audio>
+    <audio id="click-sound" src="Assets/Audio/Select.wav" preload="auto"></audio>
+
+    <script>
+        function showThankYouMessage(event) {
+            event.preventDefault();
+            const form = event.target;
+            const thankYouMessage = document.getElementById('thank-you-message');
+
+            thankYouMessage.style.display = 'block';
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    form.reset();
+                } else {
+                    console.error('Error submitting the form:', response.statusText);
+                }
+            })
+            .catch(error => {
+                console.error('Error submitting the form:', error);
+            });
+        }
+    </script>
+
+    <script src="Js/script.js"></script>
+</body>
+</html>

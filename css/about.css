@@ -1,0 +1,41 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-title {
+    color: aliceblue;
+    font-weight: 100;
+    font-size: 96px;
+    padding-bottom: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.about-desc {
+    color: aliceblue;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.about-button {
+background-color: #7f6d9b;
+color: aliceblue;
+transition: transform 0.3s ease;
+font-family: 'BitPotion', Arial, sans-serif;
+font-size: xx-large;
+border: none;
+border-radius: 5px;
+width: 10%;
+transition: transform 0.3s ease;
+}
+
+.about-button:hover {
+background-color: #585a85;
+transform: scale(1.2);
+cursor: pointer;
+}
+

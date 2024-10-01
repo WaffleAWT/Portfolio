@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'BitPotion';
+    src: url('../Assets/Fonts/BitPotion.ttf') format('truetype');
+}
+
+body {
+    background:rgb(30,30,40);
+    padding-bottom: 256px;
+}
+
+.contact {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.form {
+  max-width:420px;
+  margin: 100px;
+}
+
+.feedback-input {
+  color:white;
+  font-family: 'BitPotion', Arial, sans-serif;
+  font-weight:500;
+  font-size: 32px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #7f6d9b;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus {
+    border:2px solid #585a85;
+}
+
+.feedback-input::placeholder {
+    color: #7f6d9b;
+    font-size: 32px;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+    font-family: 'BitPotion', Arial, sans-serif;
+  width: 100%;
+  background:#7f6d9b;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color: #f0f8ff;
+  font-size:48px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#585a85; }
+

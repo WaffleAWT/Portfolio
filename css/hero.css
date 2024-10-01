@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'BitPotion';
+    src: url('../Assets/Fonts/BitPotion.ttf') format('truetype');
+}
+
+.hero {
+display: flex;
+justify-content: space-between;
+align-items: center;
+display: flex;
+flex-direction: row;
+}
+
+.left-section{
+flex: 1;
+margin-left: 176px;
+top: 0;
+bottom: 0;
+}
+
+h1 {
+color: aliceblue;
+font-weight: 100;
+font-size: 96px;
+padding-bottom: 0px;
+margin: 0px;
+}
+    
+p {
+color: aliceblue;
+font-size: xx-large;
+}
+
+.hero-button {
+background-color: #7f6d9b;
+color: aliceblue;
+transition: transform 0.3s ease;
+font-family: 'BitPotion', Arial, sans-serif;
+font-size: xx-large;
+border: none;
+border-radius: 5px;
+width: 25%;
+}
+    
+.hero-button:hover {
+background-color: #585a85;
+transform: scale(1.2);
+cursor: pointer;
+}
+
+.right-section{
+flex: 1;
+margin-left: 128px;
+}
+
+.hero-img {
+position: absolute;
+object-fit: contain;
+top: 0;
+bottom: 0;
+margin: auto;
+animation: animate 1s infinite ease alternate;
+}
+
+@keyframes animate {
+    100% {
+        transform: translateY(20px);
+    }
+}
+

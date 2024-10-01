@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'BitPotion';
+    src: url('../Assets/Fonts/BitPotion.ttf') format('truetype');
+}
+
+.navbar {
+border-radius: 25px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0px 20px;
+position: fixed;
+z-index: 2;
+}
+
+.nav-buttons{
+flex: 3;
+display: flex;
+gap : 10px;
+margin-left: 1200px;
+}
+
+.nav-button {
+background-color: transparent;
+color: aliceblue;
+padding: 10px 15px;
+border-radius: 5px;
+border: none;
+transition: transform 0.3s ease;
+font-size: xx-large;
+font-weight: 100px;
+font-family: 'BitPotion', Arial, sans-serif;
+}
+
+.nav-button:hover {
+transform: scale(1.5);
+cursor: pointer;
+color: #585a85;
+}
+
+.nav-img {
+flex: 3;
+width: 96px;
+height: 96px;
+}
+
