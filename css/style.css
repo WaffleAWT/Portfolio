@@ -5,8 +5,8 @@
 
 body {
     font-family: 'BitPotion', Arial, sans-serif;
-    background-image: url('/portfolio/Assets\Images\Background.png');
-    cursor: url('/portfolio/Assets/Images/Cursors/Idle.png'), auto;
+    background-image: url('/Assets/Images/Background.png');
+    cursor: url('/Assets/Images/Cursors/Idle.png'), auto;
 }
 
 html {
@@ -20,17 +20,17 @@ html {
 }
 
 button, .nav-button, .hero-button, .about-button, input[type="submit"] {
-    cursor: url('/portfolio/Assets/Images/Cursors/Pointer.png'), auto !important;
+    cursor: url('/Assets/Images/Cursors/Pointer.png'), auto !important;
 }
 
 .navbar a img {
-    cursor: url('/portfolio/Assets/Images/Cursors/Pointer.png'), auto !important;
+    cursor: url('/Assets/Images/Cursors/Pointer.png'), auto !important;
 }
 
 .social-icons a {
-    cursor: url('/portfolio/Assets/Images/Cursors/Pointer.png'), auto !important;
+    cursor: url('/Assets/Images/Cursors/Pointer.png'), auto !important;
 }
 
 .feedback-input, textarea {
-    cursor: url('/portfolio/Assets/Images/Cursors/Text.png'), auto;
+    cursor: url('/Assets/Images/Cursors/Text.png'), auto;
 }
