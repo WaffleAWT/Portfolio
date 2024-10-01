@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="css/navBar.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/ticTacToe.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/socialIcons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
 </head>
 <body>
     <nav class="navbar">
@@ -55,14 +55,14 @@
             <button class="game-dev" id="game-dev">Game Development</button>
             <button class="modeling" id="modeling">Modeling</button>
             <button class="pixel-art" id="pixel-art">Pixel Art</button>
-            <button class="music" id="music">Music</button> <!-- New button added -->
+            <button class="music" id="music">Music</button>
         </div>
         <div class="right-section">
             <img src="Assets/Images/Web.png" class="web-img" id="web-img">
             <img src="Assets/Images/GameDev.png" class="game-img" id="game-img">
             <img src="Assets/Images/Modeling.png" class="modeling-img" id="modeling-img">
             <img src="Assets/Images/Pixel.png" class="pixel-img" id="pixel-img">
-            <img src="Assets/Images/Music.png" class="music-img" id="music-img" style="display:none;"> <!-- Music image -->
+            <img src="Assets/Images/Music.png" class="music-img" id="music-img" style="display:none;">
         </div>
     </section>    
 
@@ -72,8 +72,8 @@
                 Thank you! I will get in touch with you soon ^-^
             </div>
             <form id="contact-form" action="https://formspree.io/f/mgvwgdvz" method="POST" onsubmit="showThankYouMessage(event)">      
-                <input name="name" type="text" class="feedback-input" placeholder="Name" required />   
-                <input name="email" type="email" class="feedback-input" placeholder="Email" required />
+                <input name="name" type="text" class="feedback-input" placeholder="Name" required autocomplete="name" />   
+                <input name="email" type="email" class="feedback-input" placeholder="Email" required autocomplete="email" />
                 <textarea name="text" class="feedback-input" placeholder="Comment" required></textarea>
                 <input type="submit" value="SUBMIT"/>
             </form>
